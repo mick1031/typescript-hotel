@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typescript Hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="w-100" style="z-index: 10;position:absolute;">
+        <div class="d-flex justify-content-between px-5 py-3">
+            <div style="width: 196px;">
+                <img style="display: block;width: 100%;"
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/logo.png"
+                    alt="">
+            </div>
+            <div style="width: 355px;">
+                <ul class="nav h-100 justify-content-around align-items-center">
+                    <li>
+                        <a href="#">客房旅宿</a>
+                    </li>
+                    <li>
+                        <a href="#">會員登入</a>
+                    </li>
+                    <li class="bg-primary rounded px-4 py-2">
+                        <a href="#" class="text-white">
+                            立即訂房
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div style="height: 678px;">
+                        <div class="d-flex align-items-center h-100 ps-5">
+                            <h3 class="border-bottom border-primary text-primary pb-3">
+                                享樂酒店 <br>
+                                Enjoyment Luxury Hotel
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex align-items-center h-100">
+                        <div class="border p-5 w-75" style="border-radius: 25px;">
+                            <div style="margin-left: -100px;">
+                                <div class="text-white">
+                                    <h1>
+                                        高雄 <br>
+                                        豪華住宿之選
+                                    </h1>
+                                    <p>
+                                        我們致力於為您提供無與倫比的奢華體驗與優質服務
+                                    </p>
+                                </div>
+
+                                <div style="height: 116px;"
+                                    class="mt-2 bg-white text-primary rounded d-flex justify-content-end align-items-center">
+                                    <span class="me-2">立即訂房</span>
+                                    <div class="border" style="width: 150px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="carousel slide" id="carouselBanner" data-bs-ride="carousel" style="min-height: 1080px;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/banner.png"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/banner.png"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/banner.png"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/banner.png"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/banner.png"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-2">
+                <h2>
+                    最新<br>
+                    消息
+                </h2>
+            </div>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-5">
+                        <img class="d-block w-100 rounded"
+                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/news1.png"
+                            alt="">
+                    </div>
+                    <div class="col-7">
+                        <div class="d-flex flex-column justify-content-center h-100">
+                            <h4>秋季旅遊，豪華享受方案</h4>
+                            <p class="mt-3">
+                                秋天就是要來場豪華的旅遊！我們為您準備了一系列的秋季特別方案，包括舒適的住宿、美食饗宴，以及精彩的活動。不論您是想來一趟浪漫之旅，還是想和家人共度美好時光，都能在這裡找到最適合的方案。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-5">
+                        <img class="d-block w-100 rounded"
+                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/news2.png"
+                            alt="">
+                    </div>
+                    <div class="col-7">
+                        <div class="d-flex flex-column justify-content-center h-100">
+                            <h4>輕鬆住房專案</h4>
+                            <p class="mt-3">
+                                我們知道，有時候您只是需要一個舒適的地方放鬆心情。因此，我們推出了「輕鬆住房專案」，讓您無壓力地享受住宿。不管是短期的休息，還是長期的住宿，我們都會以最貼心的服務，讓您感到賓至如歸。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-5">
+                        <img class="d-block w-100 rounded"
+                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/news3.png"
+                            alt="">
+                    </div>
+                    <div class="col-7">
+                        <div class="d-flex flex-column justify-content-center h-100">
+                            <h4>耶誕快樂，住房送禮</h4>
+                            <p class="mt-3">聖誕節來臨，我們為您準備了特別的禮物！在聖誕期間訂房，不僅有特別優惠，還會送上我們精心準備的聖誕禮物。讓我們一起慶祝這個溫馨的節日吧！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 w-100 bg-black" style="padding-top: 120px; padding-bottom: 120px;">
+        <div class="w-100"
+            style="height: 672px; background-position: center;background-size: cover;background-repeat: no-repeat;background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/about.png');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 offset-md-2 h-100">
+                        <div style="position: relative;height: 672px;">
+                            <div class="border mt-5 p-5"
+                                style="border-radius: 25px 25px 0 25px;background-color: #140F0ACC; position: absolute;bottom: -50px;">
+                                <div class="d-flex align-items-center">
+                                    <h2 class="me-5 text-white">
+                                        關於<br>
+                                        我們
+                                    </h2>
+                                    <div class="border w-25"></div>
+                                </div>
+
+                                <div class="mt-4 text-white">
+                                    <div>
+                                        <p>
+                                            享樂酒店，位於美麗島高雄的心臟地帶，是這座城市的璀璨瑰寶與傲人地標。<br>
+                                            我們的存在，不僅僅是為了提供奢華的住宿體驗，更是為了將高雄的美麗與活力，獻給每一位蒞臨的旅客。
+                                        </p>
+                                    </div>
+                                    <div class="mt-5">
+                                        <p>
+                                            我們的酒店，擁有時尚典雅的裝潢，每一個細節都充滿著藝術與設計的精緻。 <br>
+                                            我們的員工，都以熱情的服務與專業的態度，讓每一位客人都能感受到賓至如歸的溫暖。
+                                        </p>
+                                    </div>
+                                    <div class="mt-5">
+                                        <p>
+                                            在這裡，您可以遙望窗外，欣賞高雄的城市景色，感受這座城市的繁華與活力；您也可以舒適地坐在我們的餐廳，品嚐精緻的佳餚，體驗無與倫比的味覺盛宴。
+                                        </p>
+                                    </div>
+                                    <div class="mt-5">
+                                        <p>
+                                            享樂酒店，不僅是您在高雄的住宿之選，更是您感受高雄魅力的最佳舞台。我們期待著您的蒞臨，讓我們共同編織一段難忘的高雄故事。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="position: relative;" class="bg-black">
+        <div class="d-flex align-content-stretch "
+            style="z-index: 10; position: relative;padding-top: 120px; padding-bottom: 120px;">
+            <div style="width: 45%;">
+                <div class="carousel slide" id="carouselAbout" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselAbout" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/room1.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/room1.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/room1.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/room1.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/room1.png"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 55%;">
+                <div class="d-flex flex-column justify-content-around h-100">
+                    <div class="h-100 pt-5">
+                        <img class="d-block w-100" style="height: 178px;"
+                            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/line3.png"
+                            alt="">
+                    </div>
+                    <div class="w-75 ps-5">
+                        <div class="text-white">
+                            <h4>尊爵雙人房</h4>
+                            <p>享受高級的住宿體驗，尊爵雙人房提供給您舒適寬敞的空間和精緻的裝潢。</p>
+                            <h4 class="mt-5">
+                                NT$ 10,000
+                            </h4>
+                            <div style="height: 116px;"
+                                class="mt-3 fs-4 bg-white text-dark rounded d-flex justify-content-end align-items-center">
+                                <span class="me-2">查看更多</span>
+                                <div class="border" style="width: 150px;"></div>
+                            </div>
+                            <div class="mt-3 d-flex justify-content-end">
+                                <a href="#" class="text-white">
+                                    <i class="bi bi-arrow-left"></i>
+                                </a>
+                                <a href="#" class="text-white">
+                                    <i class="bi bi-arrow-right ms-3" style="cursor: pointer;"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img style="position: absolute;bottom: 0;" class="d-block w-100"
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/bg.png"
+            alt="">
+    </div>
+
+    <div class="container-fluid" style="padding-top: 120px;padding-bottom: 120px;">
+        <div class="row">
+            <div class="col-2">
+                <div style="position: relative;">
+                    <img class="d-block" style="height: 1068px; position: absolute;top: -50px;z-index: 10;"
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/line.png"
+                        alt="">
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="d-flex align-items-center">
+                    <h2>
+                        佳餚<br>
+                        美饌
+                    </h2>
+                    <div class="ms-3">
+                        <div class="border" style="width: 150px;"></div>
+                    </div>
+                </div>
+                <div class="mt-5" style="overflow-x: hidden;">
+                    <div class="d-flex " style="gap: 24px;">
+                        <div class="d-flex align-items-end"
+                            style="width: 416px;height: 600px;background-position: center;background-size: cover;background-repeat: no-repeat;background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/food1.png');">
+                            <div class="px-2" style="width: 416px; background-color: rgba(255, 255, 255, 0.8);">
+                                <div class="d-flex justify-content-between py-3">
+                                    <div>
+                                        海霸
+                                    </div>
+                                    <div class="d-flex justify-content-between" style="width: 200px;">
+                                        <div>
+                                            SUN-MON
+                                        </div>
+                                        <div>
+                                            11:00 - 20:30
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    以新鮮海產料理聞名，我們的專業廚師選用高雄當地的海鮮，每一道菜都充滿海洋的鮮美與清甜。無論是烤魚、蒸蝦還是煮蛤蜊，都能讓您品嚐到最新鮮的海洋風味。
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bg-black" style="padding-top: 120px;">
+        <div class="container text-white">
+            <div class="d-flex align-items-center">
+                <h2>
+                    交通<br>
+                    方式
+                </h2>
+                <div class="ms-3">
+                    <div class="border" style="width: 150px;"></div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <p>台灣高雄市新興區六角路123號</p>
+                <img class="d-block w-100" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/map.png" alt="">
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"><path fill="#be9c7c" d="M4 15.5V6q0-1.325.688-2.113t1.812-1.2q1.125-.412 2.563-.55T12 2q1.65 0 3.113.138t2.55.55q1.087.412 1.712 1.2T20 6v9.5q0 1.475-1.012 2.488T16.5 19l1.5 1.5v.5h-2l-2-2h-4l-2 2H6v-.5L7.5 19q-1.475 0-2.488-1.012T4 15.5M6 10h5V7H6zm7 0h5V7h-5zm-4.5 6q.65 0 1.075-.425T10 14.5q0-.65-.425-1.075T8.5 13q-.65 0-1.075.425T7 14.5q0 .65.425 1.075T8.5 16m7 0q.65 0 1.075-.425T17 14.5q0-.65-.425-1.075T15.5 13q-.65 0-1.075.425T14 14.5q0 .65.425 1.075T15.5 16"/></svg>
+                    <h5>自行開車</h5>
+                    <p>如果您選擇自行開車，可以透過國道一號下高雄交流道，往市區方向行駛，並依路標指示即可抵達「享樂酒店」。飯店內設有停車場，讓您停車方便。</p>
+                </div>
+                <div class="col-md-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"><path fill="#be9c7c" d="m5 11l1.5-4.5h11L19 11m-1.5 5a1.5 1.5 0 0 1-1.5-1.5a1.5 1.5 0 0 1 1.5-1.5a1.5 1.5 0 0 1 1.5 1.5a1.5 1.5 0 0 1-1.5 1.5m-11 0A1.5 1.5 0 0 1 5 14.5A1.5 1.5 0 0 1 6.5 13A1.5 1.5 0 0 1 8 14.5A1.5 1.5 0 0 1 6.5 16M18.92 6c-.2-.58-.76-1-1.42-1h-11c-.66 0-1.22.42-1.42 1L3 12v8a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h12v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-8z"/></svg>
+                    <h5>高鐵/火車</h5>
+                    <p>如果您是搭乘高鐵或火車，可於左營站下車，外頭有計程車站，搭乘計程車約20分鐘即可抵達。或者您也可以轉乘捷運紅線至中央公園站下車，步行約10分鐘便可抵達。</p>
+                </div>
+                <div class="col-md-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24"><path fill="none" stroke="#be9c7c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 11h2a2 2 0 0 1 2 2v2a1 1 0 0 1-1 1h-1.5M17 11h-6.5m6.5 0l-2.417-4.029A2 2 0 0 0 12.868 6H10.5m0 0v5m0-5H7.64a2 2 0 0 0-1.962 1.608L5 11m5.5 0H5m.5 5H4a1 1 0 0 1-1-1v-2a2 2 0 0 1 2-2v0m.5 5a2 2 0 1 0 4 0m-4 0a2 2 0 1 1 4 0m0 0h5m0 0a2 2 0 1 0 4 0m-4 0a2 2 0 1 1 4 0"/></svg>
+                    <h5>禮賓車服務</h5>
+                    <p>承億酒店提供禮賓專車接送服務，但因目的地遠近會有不同的收費，請撥打電話將由專人為您服務洽詢專線：(07)123-4567</p>
+                </div>
+            </div>            
+        </div>
+        <div class="bg-black py-5">
+            <img class="d-block w-100" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/line2.png" alt="">
+        </div>
+        <div class="container bg-black text-white" style="padding-top: 80px;padding-bottom: 120px;">
+            <div class="d-md-flex justify-content-between">
+                <div>
+                    <img style="display: block;width: 196px;"
+                        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/master/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/logo.png"
+                        alt="">
+                    <div class="d-flex" style="font-size: 24px;">
+                        <div class="border rounded-circle p-1 d-flex align-items-center justify-content-center" style="width: 40px;height: 40px;">
+                            <i class="bi bi-line"></i>
+                        </div>
+                        <div class="border rounded-circle p-1 ms-2 d-flex align-items-center justify-content-center" style="width: 40px;height: 40px;">
+                            <i class="bi bi-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-flex justify-content-between" style="width: 425px;">
+                    <div>
+                        <div>
+                            <div>
+                                TEL
+                            </div>
+                            <div>
+                                +886-7-1234567
+                            </div>
+                        </div>
+                        <div style="margin-top: 40px;">
+                            <div>
+                                FAX
+                            </div>
+                            <div>
+                                +886-7-1234567
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                MAIL
+                            </div>
+                            <div>
+                                elh@hexschool.com
+                            </div>
+                        </div>
+                        <div style="margin-top: 40px;">
+                            <div>
+                                WEB
+                            </div>
+                            <div>
+                                www.elhhexschool.com.tw
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-md-flex justify-content-between" style="margin-top: 80px;">
+                <div>
+                    806023 台灣高雄市新興區六角路123號
+                </div>
+                <div class="text-md-end">
+                    © 享樂酒店 2023 All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
